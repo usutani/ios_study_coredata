@@ -15,6 +15,7 @@
 		9706232723F10E7500F1EFE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9706232623F10E7500F1EFE1 /* Assets.xcassets */; };
 		9706232A23F10E7500F1EFE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9706232823F10E7500F1EFE1 /* LaunchScreen.storyboard */; };
 		9706233523F10E7500F1EFE1 /* ios_study_coredataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9706233423F10E7500F1EFE1 /* ios_study_coredataTests.swift */; };
+		9706234023F1106A00F1EFE1 /* LandmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9706233F23F1106A00F1EFE1 /* LandmarkTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		9706233023F10E7500F1EFE1 /* ios_study_coredataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_study_coredataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9706233423F10E7500F1EFE1 /* ios_study_coredataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_study_coredataTests.swift; sourceTree = "<group>"; };
 		9706233623F10E7500F1EFE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9706233F23F1106A00F1EFE1 /* LandmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				9706231A23F10E7500F1EFE1 /* AppDelegate.swift */,
 				9706231C23F10E7500F1EFE1 /* SceneDelegate.swift */,
 				9706231E23F10E7500F1EFE1 /* ViewController.swift */,
+				9706233F23F1106A00F1EFE1 /* LandmarkTableViewCell.swift */,
 				9706232023F10E7500F1EFE1 /* Main.storyboard */,
 				9706232623F10E7500F1EFE1 /* Assets.xcassets */,
 				9706232823F10E7500F1EFE1 /* LaunchScreen.storyboard */,
@@ -206,6 +209,7 @@
 				9706232523F10E7500F1EFE1 /* ios_study_coredata.xcdatamodeld in Sources */,
 				9706231F23F10E7500F1EFE1 /* ViewController.swift in Sources */,
 				9706231B23F10E7500F1EFE1 /* AppDelegate.swift in Sources */,
+				9706234023F1106A00F1EFE1 /* LandmarkTableViewCell.swift in Sources */,
 				9706231D23F10E7500F1EFE1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

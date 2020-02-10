@@ -14,9 +14,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    //MARK: - Table view data source
-
+    
+    // MARK: - Table view data source
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             fatalError("The dequeued cell is not an instance of LandmarkTableViewCell.")
         }
         
-        cell.nameLabel.text = String(indexPath.row)
+        cell.nameLabel.text = "FOO"
         
         return cell
 
