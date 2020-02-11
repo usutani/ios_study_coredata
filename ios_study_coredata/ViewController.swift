@@ -70,7 +70,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.foundLabel.text = landmark.found?.boolValue.description
         cell.passedLabel.text = landmark.passed?.boolValue.description
         cell.urlLabel.text = landmark.url
-
+        
+        var tags = ""
+        for case let tag as Tag in landmark.tags! {
+            if let tagName = tag.name {
+                tags += tagName + " "
+            }
+        }
+        cell.tagsLabel.text = tags
+        
         return cell
     }
 

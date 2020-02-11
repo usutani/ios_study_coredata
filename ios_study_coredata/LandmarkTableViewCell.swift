@@ -23,6 +23,7 @@ class LandmarkTableViewCell: UITableViewCell {
     @IBOutlet weak var foundLabel: UILabel!
     @IBOutlet weak var passedLabel: UILabel!
     @IBOutlet weak var urlLabel: UITextView!
+    @IBOutlet weak var tagsLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
