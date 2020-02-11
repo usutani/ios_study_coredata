@@ -12,9 +12,17 @@ class LandmarkTableViewCell: UITableViewCell {
     
     //MARK: Properties
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var hiraganaLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
     @IBOutlet weak var longitudeLabel: UILabel!
-    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var questionTextView: UITextView!
+    @IBOutlet weak var answer1Label: UILabel!
+    @IBOutlet weak var answer2Label: UILabel!
+    @IBOutlet weak var answer3Label: UILabel!
+    @IBOutlet weak var correctLabel: UILabel!
+    @IBOutlet weak var foundLabel: UILabel!
+    @IBOutlet weak var passedLabel: UILabel!
+    @IBOutlet weak var urlLabel: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -15,6 +15,12 @@ extension Double {
     }
 }
 
+extension Int16 {
+    var correctText:String {
+        String(format: "%d", self)
+    }
+}
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var viewContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -50,10 +56,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             fatalError("The dequeued cell is not an instance of LandmarkTableViewCell.")
         }
         
-        cell.nameLabel.text = landmarks[indexPath.row].name
-        cell.latitudeLabel.text = landmarks[indexPath.row].latitude?.doubleValue.locationText
-        cell.longitudeLabel.text = landmarks[indexPath.row].longitude?.doubleValue.locationText
-        cell.questionLabel.text = landmarks[indexPath.row].question
+        let landmark = landmarks[indexPath.row]
+        cell.nameLabel.text = landmark.name
+        cell.hiraganaLabel.text = landmark.hiragana
+        cell.latitudeLabel.text = landmark.latitude?.doubleValue.locationText
+        cell.longitudeLabel.text = landmark.longitude?.doubleValue.locationText
+        cell.questionTextView.text = landmark.question
+        cell.answer1Label.text = landmark.answer1
+        cell.answer2Label.text = landmark.answer2
+        cell.answer3Label.text = landmark.answer3
+        cell.correctLabel.text = landmark.correct?.int16Value.correctText
+        cell.foundLabel.text = landmark.found?.boolValue.description
+        cell.passedLabel.text = landmark.passed?.boolValue.description
+        cell.urlLabel.text = landmark.url
 
         return cell
     }
