@@ -30,6 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         let fr = NSFetchRequest<NSFetchRequestResult>(entityName: "Landmark")
+        fr.sortDescriptors = [NSSortDescriptor(key: #keyPath(Landmark.hiragana), ascending: true)]
         do {
             landmarks = try viewContext.fetch(fr) as! [Landmark]
         } catch {
